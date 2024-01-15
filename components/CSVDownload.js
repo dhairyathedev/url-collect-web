@@ -1,5 +1,7 @@
 "use client";
 
+import { Button } from "./ui/button";
+
 const CSVDownloader = ({ csvData, start, end }) => {
   const downloadRows = (startIndex, endIndex) => {
     const rows = csvData.split('\n');
@@ -36,9 +38,9 @@ const CSVDownloader = ({ csvData, start, end }) => {
 
   return (
     <div>
-      <button onClick={() => downloadRows(start, end)}>
+      <Button onClick={() => downloadRows(start, end)}>
         Download Rows {start} to {end}
-      </button>
+      </Button>
     </div>
   );
 };
