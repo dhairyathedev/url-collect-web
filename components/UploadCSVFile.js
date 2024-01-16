@@ -22,7 +22,18 @@ export default function UploadCSVFile({uid, start, end}) {
     async function handleCSVFileUpload(){
         setLoading(true)
         try{
-        const {data, error} = await supabase.storage.from("urls").upload(`public/output_${start}_${end}.csv`, csvFile, {
+        const formData = new FormData();
+        formData.append('file', csvFile);
+        const res = await fetch('/api/csv/validate', {
+            method: "POST",
+            body: formData
+        })
+        if(res.status === 400){
+            toast.error("Invalid data in CSV file!")
+            setLoading(false)
+        }else if(res.status === 200){
+            
+            const {data, error} = await supabase.storage.from("urls").upload(`public/output_${start}_${end}.csv`, csvFile, {
             cacheControl: '3600',
             upsert: false,
             onProgress: (event) => {
@@ -43,9 +54,14 @@ export default function UploadCSVFile({uid, start, end}) {
                 toast.error("Output for this range has already uploaded! If this issue persist contact admin")
             }
         }
+            setLoading(false)
+        }else{
+            toast.error("Internal Server Error!")
+            setLoading(false)
+        }
     }catch(error){
         console.log(error)
-        throw new error;
+        // throw new error;
     }
     }
 
