@@ -44,32 +44,39 @@ const CSVDownloader = ({ csvData, uid, start, end }) => {
   async function updateCount(uid, start, end) {
     try {
       setLoading(true);
-  
+
       const { data: fetchLog, error: fetchError } = await supabase
         .from("logs")
         .select("*")
-        .eq("uid", uid)
         .eq("start", start)
         .eq("end", end)
         .single();
-  
       if (fetchLog) {
         toast.message("User has downloaded but not uploaded the file yet!");
+        if (fetchLog.uid === uid) {
+          downloadRows(start, end)
+        } else {
+          toast.error("This range is already downloaded by another user! Please login again!")
+          window.location.reload()
+        }
       } else {
         const { data: logData, error: logError } = await supabase
           .from("logs")
           .insert([{ uid, start, end }])
           .select();
-  
+
         const { data: countData, error: countError } = await supabase
           .from("count")
           .update({ last_collected_num: end })
           .eq("id", 1)
           .select();
-  
+
         if (countError || logError) {
           console.error("Count Error:", countError);
           console.error("Log Error:", logError);
+        }
+        if (countData && logData) {
+          downloadRows(start, end);
         }
       }
     } catch (error) {
@@ -77,12 +84,12 @@ const CSVDownloader = ({ csvData, uid, start, end }) => {
     } finally {
       setLoading(false);
     }
-  }  
+  }
+
   return (
     <div>
       <Button onClick={() => {
         updateCount(uid, start, end)
-        downloadRows(start, end)
       }} disabled={loading}>
         <Loader className="mr-2 animate-spin" size={16} hidden={!loading} />
         Download Rows {start} to {end}

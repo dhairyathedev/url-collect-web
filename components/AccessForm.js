@@ -77,7 +77,7 @@ export default function AccessForm({ csvData, count }) {
             
         }
         fetchUserCurrentRange()
-    })
+    }, [uid])
     if (loggedIn) return (
         <>
             <CSVDownloader csvData={csvData} start={start} end={end} uid={uid} />

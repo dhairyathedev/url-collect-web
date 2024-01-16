@@ -35,6 +35,7 @@ export default function UploadCSVFile({uid, start, end}) {
                 uploaded: true
             }).eq("start", start).eq("end", end).select()
             toast.success("Successfully uploaded the file!")
+            window.location.reload()
         }else if(error){
             setLoading(false)
             console.log(error)
