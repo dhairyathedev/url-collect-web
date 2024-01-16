@@ -41,7 +41,6 @@ export default function UploadCSVFile({uid, start, end}) {
             },
         })
         if(data){
-            setLoading(false)
             const {data: logDataUpdate, error: logErrorUpdate} = await supabase.from("logs").update({
                 uploaded: true
             }).eq("start", start).eq("end", end).select()
@@ -54,7 +53,6 @@ export default function UploadCSVFile({uid, start, end}) {
                 toast.error("Output for this range has already uploaded! If this issue persist contact admin")
             }
         }
-            setLoading(false)
         }else{
             toast.error("Internal Server Error!")
             setLoading(false)
