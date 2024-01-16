@@ -1,6 +1,6 @@
 "use client";
 import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
+import { set, useForm } from "react-hook-form"
 import * as z from "zod"
 import { Button } from "@/components/ui/button"
 import {
@@ -14,9 +14,10 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { supabase } from "@/lib/supabase";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import CSVDownloader from "./CSVDownload";
+import UploadCSVFile from "./UploadCSVFile";
 
 
 
@@ -33,7 +34,9 @@ const formSchema = z.object({
 
 export default function AccessForm({ csvData, count }) {
     const [loggedIn, setLoggedIn] = useState(false)
-
+    const [uid, setUid] = useState("")
+    const [start, setStart] = useState(count.last_collected_num + 1)
+    const [end, setEnd] = useState(count.last_collected_num + count.step)
     const form = useForm({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -48,6 +51,7 @@ export default function AccessForm({ csvData, count }) {
         const { data: user } = await supabase.from("users").select("*").eq("username", values.username).single()
         if (user && user.password === values.password) {
             setLoggedIn(true)
+            setUid(user.uid)
             toast.success("Logged in successfully.", {
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -63,12 +67,25 @@ export default function AccessForm({ csvData, count }) {
             })
         }
     }
+    useEffect(() => {
+        async function fetchUserCurrentRange(){
+            const {data, error} = await supabase.from("logs").select("*").eq("uid", uid).eq("uploaded", false).order("end", {ascending: false}).single()
+            if(data){
+                setStart(data.start)
+                setEnd(data.end)
+            }
+            
+        }
+        fetchUserCurrentRange()
+    })
     if (loggedIn) return (
         <>
-            <CSVDownloader csvData={csvData} start={count.last_collected_num + 1} end={count.last_collected_num + count.step} />
+            <CSVDownloader csvData={csvData} start={start} end={end} uid={uid} />
+
+            <UploadCSVFile start={start} end={end} uid={uid}/>
             <div className="space-y-4 mt-4">
                 <h2 className="text-xl font-semibold">Danger Zone</h2>
-                <Button variant="destructive" onClick={() => setLoggedIn(false)}>Logout</Button>
+                <Button variant="destructive" onClick={() => window.location.reload()}>Logout</Button>
             </div>
         </>
     )

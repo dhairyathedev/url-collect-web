@@ -1,8 +1,13 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "./ui/button";
+import { Loader } from "lucide-react";
+import { supabase } from "@/lib/supabase";
+import { toast } from "sonner";
 
-const CSVDownloader = ({ csvData, start, end }) => {
+const CSVDownloader = ({ csvData, uid, start, end }) => {
+  const [loading, setLoading] = useState(false);
   const downloadRows = (startIndex, endIndex) => {
     const rows = csvData.split('\n');
     const header = rows[0]; // Header as a string
@@ -36,9 +41,50 @@ const CSVDownloader = ({ csvData, start, end }) => {
     URL.revokeObjectURL(url);
   };
 
+  async function updateCount(uid, start, end) {
+    try {
+      setLoading(true);
+  
+      const { data: fetchLog, error: fetchError } = await supabase
+        .from("logs")
+        .select("*")
+        .eq("uid", uid)
+        .eq("start", start)
+        .eq("end", end)
+        .single();
+  
+      if (fetchLog) {
+        toast.message("User has downloaded but not uploaded the file yet!");
+      } else {
+        const { data: logData, error: logError } = await supabase
+          .from("logs")
+          .insert([{ uid, start, end }])
+          .select();
+  
+        const { data: countData, error: countError } = await supabase
+          .from("count")
+          .update({ last_collected_num: end })
+          .eq("id", 1)
+          .select();
+  
+        if (countError || logError) {
+          console.error("Count Error:", countError);
+          console.error("Log Error:", logError);
+        }
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    } finally {
+      setLoading(false);
+    }
+  }  
   return (
     <div>
-      <Button onClick={() => downloadRows(start, end)}>
+      <Button onClick={() => {
+        updateCount(uid, start, end)
+        downloadRows(start, end)
+      }} disabled={loading}>
+        <Loader className="mr-2 animate-spin" size={16} hidden={!loading} />
         Download Rows {start} to {end}
       </Button>
     </div>
