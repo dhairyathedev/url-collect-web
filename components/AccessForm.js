@@ -48,7 +48,7 @@ export default function AccessForm({ csvData, count }) {
 
 
     async function onSubmit(values) {
-        const { data: user } = await supabase.from("users").select("*").eq("username", values.username).single()
+        const { data: user } = await supabase.from("users").select("*").eq("username", (values.username).toLowerCase()).single()
         if (user && user.password === values.password) {
             setLoggedIn(true)
             setUid(user.uid)
