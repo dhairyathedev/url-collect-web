@@ -14,7 +14,7 @@ export default async function Page() {
   return (
     <>
       <div className="max-w-screen-md mx-auto m-2 p-4">
-        <h1 className="text-3xl font-bold">URL Collector</h1>
+        <h1 className="text-3xl font-bold">URL Collector Dashboard</h1>
         <div className="mt-4 flex flex-col space-y-3">
           {count && (
             <>
