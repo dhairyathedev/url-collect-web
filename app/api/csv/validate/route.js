@@ -22,7 +22,7 @@ export async function POST(request, response) {
         const rows = fileContent.split('\n');
         console.log(rows.length)
         // rows length should be less than 17 and greater than 10
-        if(rows.length >= 17 || rows.length < 10){
+        if(rows.length > 18 || rows.length < 10){
             return NextResponse.json({ message: "Invalid data in csv file!" }, { status: 400 }); 
         }
 
