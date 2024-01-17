@@ -20,7 +20,9 @@ export async function POST(request, response) {
         }
         // check if the csv file has the 15 rows excluding the header and also only include the non empty rows (chatgpt you have to solve this problem)
         const rows = fileContent.split('\n');
-        if(rows.length <= 17 && rows.length >= 10){
+        console.log(rows.length)
+        // rows length should be less than 17 and greater than 10
+        if(rows.length >= 17 || rows.length < 10){
             return NextResponse.json({ message: "Invalid data in csv file!" }, { status: 400 }); 
         }
 
