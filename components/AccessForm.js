@@ -18,6 +18,7 @@ import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import CSVDownloader from "./CSVDownload";
 import UploadCSVFile from "./UploadCSVFile";
+import Certificate from "./Certificate";
 
 
 
@@ -37,6 +38,7 @@ export default function AccessForm({ csvData, count }) {
     const [uid, setUid] = useState("")
     const [start, setStart] = useState(count.last_collected_num + 1)
     const [end, setEnd] = useState(count.last_collected_num + count.step)
+    const [user ,setUser] = useState({})
     const form = useForm({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -51,6 +53,7 @@ export default function AccessForm({ csvData, count }) {
         const { data: user } = await supabase.from("users").select("*").eq("username", (values.username).toLowerCase()).single()
         if (user && user.password === values.password) {
             setLoggedIn(true)
+            setUser(user)
             setUid(user.uid)
             toast.success("Logged in successfully.", {
                 autoClose: 5000,
@@ -78,11 +81,12 @@ export default function AccessForm({ csvData, count }) {
         }
         fetchUserCurrentRange()
     }, [uid])
+
     if (loggedIn) {
         if (count && count.end < end) {
             return (
                 <>
-                    <marquee className="text-xl font-semibold uppercase" scrollamount="5">Completed all the universities...</marquee>
+                    <Certificate name={user.name} forWhat={count.name} uid={uid}/>
                 </>
             );
         } else {
