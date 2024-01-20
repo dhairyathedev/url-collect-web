@@ -9,7 +9,7 @@ export default function Certificate({name, forWhat, uid,}) {
     const handleDownloadImage = async () => {
         const element = printRef.current;
       
-        element.style.width = "800px"; 
+        element.style.width = "1000px"; 
         element.style.height = "auto";
       
         const canvas = await html2canvas(element, {
@@ -50,7 +50,7 @@ export default function Certificate({name, forWhat, uid,}) {
     }, [uid])
     return (
         <>
-      <div className="w-full h-full bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 p-10 text-center shadow-lg rounded-lg overflow-hidden" ref={printRef}>
+      <div className="w-full h-full bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-10 text-center shadow-lg rounded-lg overflow-hidden" ref={printRef}>
         <div className="border-b-2 border-gray-300 dark:border-gray-700 pb-6">
           <h1 className="text-5xl font-bold text-white dark:text-gray-100">Certificate of Completion</h1>
           <p className="text-xl text-white dark:text-gray-400 mt-2">This is to certify that</p>
