@@ -78,56 +78,67 @@ export default function AccessForm({ csvData, count }) {
         }
         fetchUserCurrentRange()
     }, [uid])
-    if (loggedIn) return (
-        <>
-            <CSVDownloader csvData={csvData} start={start} end={end} uid={uid} />
-
-            <UploadCSVFile start={start} end={end} uid={uid}/>
-            <div className="space-y-4 mt-4">
-                <h2 className="text-xl font-semibold">Danger Zone</h2>
-                <Button variant="destructive" onClick={() => window.location.reload()}>Logout</Button>
-            </div>
-        </>
-    )
-    return (
-        <>
-            <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-                    <FormField
-                        control={form.control}
-                        name="username"
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Username</FormLabel>
-                                <FormControl>
-                                    <Input type="text" placeholder="23dcs256" {...field} />
-                                </FormControl>
-                                <FormDescription>
-                                    Enter your username provided to you.
-                                </FormDescription>
-                                <FormMessage />
-                            </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name="password"
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Password</FormLabel>
-                                <FormControl>
-                                    <Input type="password" placeholder="Secret Password" {...field} />
-                                </FormControl>
-                                <FormDescription>
-                                    Enter the password provided to you. Don&apos;t share this with anyone.
-                                </FormDescription>
-                                <FormMessage />
-                            </FormItem>
-                        )}
-                    />
-                    <Button type="submit" size="sm">Login</Button>
-                </form>
-            </Form>
-        </>
-    )
+    if (loggedIn) {
+        if (count && count.end < end) {
+            return (
+                <>
+                    <marquee className="text-xl font-semibold uppercase" scrollamount="5">Completed all the universities...</marquee>
+                </>
+            );
+        } else {
+            return (
+                <>
+                    <CSVDownloader csvData={csvData} start={start} end={end} uid={uid} />
+    
+                    <UploadCSVFile start={start} end={end} uid={uid}/>
+                    <div className="space-y-4 mt-4">
+                        <h2 className="text-xl font-semibold">Danger Zone</h2>
+                        <Button variant="destructive" onClick={() => window.location.reload()}>Logout</Button>
+                    </div>
+                </>
+            );
+        }
+    } else {
+        return (
+            <>
+                <Form {...form}>
+                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                        <FormField
+                            control={form.control}
+                            name="username"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Username</FormLabel>
+                                    <FormControl>
+                                        <Input type="text" placeholder="23dcs256" {...field} />
+                                    </FormControl>
+                                    <FormDescription>
+                                        Enter your username provided to you.
+                                    </FormDescription>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name="password"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Password</FormLabel>
+                                    <FormControl>
+                                        <Input type="password" placeholder="Secret Password" {...field} />
+                                    </FormControl>
+                                    <FormDescription>
+                                        Enter the password provided to you. Don&apos;t share this with anyone.
+                                    </FormDescription>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <Button type="submit" size="sm">Login</Button>
+                    </form>
+                </Form>
+            </>
+        );
+    }    
 }
