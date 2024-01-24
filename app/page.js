@@ -7,8 +7,8 @@ const path = require('path')
 export const revalidate = 0
 
 export default async function Page() {
-  const { data: count } = await supabase.from("count").select("*").eq("id", 1).single()
-  const csvFile = path.join(process.cwd(), 'public', 'college_list.csv')
+  const { data: count } = await supabase.from("count").select("*").eq("id", 2).single()
+  const csvFile = path.join(process.cwd(), 'public', 'gujarat_aicte.csv')
   const csvData = fs.readFileSync(csvFile, 'utf8')
 
   return (

@@ -11,18 +11,18 @@ const CSVDownloader = ({ csvData, uid, start, end }) => {
   const downloadRows = (startIndex, endIndex) => {
     const rows = csvData.split('\n');
     const header = rows[0]; // Header as a string
-    const snoIndex = header.indexOf('Sno');
+    const idIndex = header.indexOf('id');
 
-    if (snoIndex === -1) {
-      console.error('Sno column not found in the header');
+    if (idIndex === -1) {
+      console.error('id column not found in the header');
       return;
     }
 
     const selectedRows = rows
       .slice(1) // Exclude the header
       .filter((row) => {
-        const sno = row.split(',')[snoIndex];
-        return sno >= startIndex && sno <= endIndex;
+        const idno = row.split(',')[idIndex];
+        return idno >= startIndex && idno <= endIndex;
       })
       .join('\n');
 
@@ -62,13 +62,13 @@ const CSVDownloader = ({ csvData, uid, start, end }) => {
       } else {
         const { data: logData, error: logError } = await supabase
           .from("logs")
-          .insert([{ uid, start, end }])
+          .insert([{ uid, start, end, for: 2 }])
           .select();
 
         const { data: countData, error: countError } = await supabase
           .from("count")
           .update({ last_collected_num: end })
-          .eq("id", 1)
+          .eq("id", 2)
           .select();
 
         if (countError || logError) {

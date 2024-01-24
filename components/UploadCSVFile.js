@@ -33,7 +33,7 @@ export default function UploadCSVFile({uid, start, end}) {
             setLoading(false)
         }else if(res.status === 200){
             
-            const {data, error} = await supabase.storage.from("urls").upload(`public/output_${start}_${end}.csv`, csvFile, {
+            const {data, error} = await supabase.storage.from("urls").upload(`gujarat_aicte/output_${start}_${end}.csv`, csvFile, {
             cacheControl: '3600',
             upsert: false,
             onProgress: (event) => {
@@ -43,7 +43,7 @@ export default function UploadCSVFile({uid, start, end}) {
         if(data){
             const {data: logDataUpdate, error: logErrorUpdate} = await supabase.from("logs").update({
                 uploaded: true
-            }).eq("start", start).eq("end", end).select()
+            }).eq("for", 2).eq("start", start).eq("end", end).select()
             toast.success("Successfully uploaded the file!")
             window.location.reload()
         }else if(error){
