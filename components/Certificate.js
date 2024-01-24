@@ -37,7 +37,7 @@ export default function Certificate({name, forWhat, uid,}) {
       };
     useEffect(() => {
         async function fetchTotalURLCount() {
-            const { data: count } = await supabase.from("logs").select("*").eq("uid", uid).eq("uploaded", true);
+            const { data: count } = await supabase.from("logs").select("*").eq("for", 2).eq("uid", uid).eq("uploaded", true);
             let sum;
             if (count) {
                 sum = count.reduce((acc, curr) => {
