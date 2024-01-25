@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import { Loader } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 import { toast } from "sonner";
+import { COUNT_ID } from "@/lib/consts";
 
 const CSVDownloader = ({ csvData, uid, start, end }) => {
   const [loading, setLoading] = useState(false);
@@ -62,13 +63,13 @@ const CSVDownloader = ({ csvData, uid, start, end }) => {
       } else {
         const { data: logData, error: logError } = await supabase
           .from("logs")
-          .insert([{ uid, start, end, for: 2 }])
+          .insert([{ uid, start, end, for: COUNT_ID }])
           .select();
 
         const { data: countData, error: countError } = await supabase
           .from("count")
           .update({ last_collected_num: end })
-          .eq("id", 2)
+          .eq("id", COUNT_ID)
           .select();
 
         if (countError || logError) {

@@ -1,14 +1,14 @@
 import CSVDownloader from '@/components/CSVDownload'
 import AccessForm from '@/components/AccessForm'
 import { supabase } from '@/lib/supabase'
-import { CSV_FILE_NAME } from '@/lib/consts'
+import { COUNT_ID, CSV_FILE_NAME } from '@/lib/consts'
 const fs = require('fs')
 const path = require('path')
 
 export const revalidate = 0
 
 export default async function Page() {
-  const { data: count } = await supabase.from("count").select("*").eq("id", 2).single()
+  const { data: count } = await supabase.from("count").select("*").eq("id", COUNT_ID).single()
   const csvFile = path.join(process.cwd(), 'public', CSV_FILE_NAME)
   const csvData = fs.readFileSync(csvFile, 'utf8')
 
