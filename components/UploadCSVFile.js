@@ -15,6 +15,7 @@ import { Label } from './ui/label'
 import { Input } from './ui/input'
 import { supabase } from '@/lib/supabase'
 import { toast } from 'sonner'
+import { FOR_NAME } from '@/lib/consts'
 
 export default function UploadCSVFile({uid, start, end}) {
     const [csvFile, setCSVFile] = useState();
@@ -33,7 +34,7 @@ export default function UploadCSVFile({uid, start, end}) {
             setLoading(false)
         }else if(res.status === 200){
             
-            const {data, error} = await supabase.storage.from("urls").upload(`gujarat_aicte/output_${start}_${end}.csv`, csvFile, {
+            const {data, error} = await supabase.storage.from("urls").upload(`${FOR_NAME}/output_${start}_${end}.csv`, csvFile, {
             cacheControl: '3600',
             upsert: false,
             onProgress: (event) => {
