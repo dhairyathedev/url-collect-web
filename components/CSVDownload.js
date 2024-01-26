@@ -49,6 +49,7 @@ const CSVDownloader = ({ csvData, uid, start, end }) => {
       const { data: fetchLog, error: fetchError } = await supabase
         .from("logs")
         .select("*")
+        .eq("for", COUNT_ID)
         .eq("start", start)
         .eq("end", end)
         .single();

@@ -19,6 +19,7 @@ import { toast } from "sonner";
 import CSVDownloader from "./CSVDownload";
 import UploadCSVFile from "./UploadCSVFile";
 import Certificate from "./Certificate";
+import { COUNT_ID } from "@/lib/consts";
 
 
 
@@ -72,7 +73,7 @@ export default function AccessForm({ csvData, count }) {
     }
     useEffect(() => {
         async function fetchUserCurrentRange(){
-            const {data, error} = await supabase.from("logs").select("*").eq("uid", uid).eq("uploaded", false).order("end", {ascending: false}).single()
+            const {data, error} = await supabase.from("logs").select("*").eq("for", COUNT_ID).eq("uid", uid).eq("uploaded", false).order("end", {ascending: false}).single()
             if(data){
                 setStart(data.start)
                 setEnd(data.end)
