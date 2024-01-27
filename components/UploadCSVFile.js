@@ -15,7 +15,7 @@ import { Label } from './ui/label'
 import { Input } from './ui/input'
 import { supabase } from '@/lib/supabase'
 import { toast } from 'sonner'
-import { FOR_NAME } from '@/lib/consts'
+import { COUNT_ID, FOR_NAME } from '@/lib/consts'
 
 export default function UploadCSVFile({uid, start, end}) {
     const [csvFile, setCSVFile] = useState();
@@ -44,7 +44,7 @@ export default function UploadCSVFile({uid, start, end}) {
         if(data){
             const {data: logDataUpdate, error: logErrorUpdate} = await supabase.from("logs").update({
                 uploaded: true
-            }).eq("for", 2).eq("start", start).eq("end", end).select()
+            }).eq("for", COUNT_ID).eq("start", start).eq("end", end).select()
             toast.success("Successfully uploaded the file!")
             window.location.reload()
         }else if(error){
