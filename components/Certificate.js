@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import { Button } from "./ui/button";
 import html2canvas from "html2canvas";
 import { supabase } from "@/lib/supabase";
+import { COUNT_ID } from "@/lib/consts";
 export default function Certificate({name, forWhat, uid,}) {
 
     const printRef = useRef()
@@ -37,7 +38,7 @@ export default function Certificate({name, forWhat, uid,}) {
       };
     useEffect(() => {
         async function fetchTotalURLCount() {
-            const { data: count } = await supabase.from("logs").select("*").eq("for", 2).eq("uid", uid).eq("uploaded", true);
+            const { data: count } = await supabase.from("logs").select("*").eq("for", COUNT_ID).eq("uid", uid).eq("uploaded", true);
             let sum;
             if (count) {
                 sum = count.reduce((acc, curr) => {
