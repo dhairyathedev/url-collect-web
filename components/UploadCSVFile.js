@@ -29,7 +29,15 @@ export default function UploadCSVFile({uid, start, end}) {
             method: "POST",
             body: formData
         })
-        if(res.status === 400){
+        // check if the user has downloaded the file or not before uploading
+        const {data: logData, error: logError} = await supabase.from("logs").select("*").eq("for", COUNT_ID).eq("start", start).eq("end", end).eq("uid", uid).eq("uploaded", false).single()
+        if(
+            !logData
+        ){
+            toast.error("You have not downloaded the file yet!")
+            setLoading(false)
+        }
+        else if(res.status === 400){
             toast.error("Invalid data in CSV file!")
             setLoading(false)
         }else if(res.status === 200){
