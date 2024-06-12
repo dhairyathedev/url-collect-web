@@ -2,6 +2,7 @@ import CSVDownloader from '@/components/CSVDownload'
 import AccessForm from '@/components/AccessForm'
 import { supabase } from '@/lib/supabase'
 import { COUNT_ID, CSV_FILE_NAME } from '@/lib/consts'
+import { AlertCard } from '@/components/AlertCard'
 const fs = require('fs')
 const path = require('path')
 
@@ -31,6 +32,9 @@ export default async function Page() {
             </details>
             </>
           )}
+        </div>
+        <div className="mt-4">
+          <AlertCard remaining={count.end-count.last_collected_num}/>
         </div>
         <div className="mt-4">
             <AccessForm csvData={csvData} count={count}/>
