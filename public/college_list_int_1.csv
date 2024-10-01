@@ -1,0 +1,554 @@
+id,name,branch,location
+1,Khalifa University,Computer Science Engineering,UAE
+2,Khalifa University,Computer Engineering,UAE
+3,Khalifa University,Information Technology,UAE
+4,Khalifa University,Electronics and Communications Engineering,UAE
+5,Khalifa University,Mechanical Engineering,UAE
+6,Khalifa University,Electrical Engineering,UAE
+7,Khalifa University,Civil Engineering,UAE
+8,United Arab Emirates University (UAEU),Computer Science Engineering,UAE
+9,United Arab Emirates University (UAEU),Computer Engineering,UAE
+10,United Arab Emirates University (UAEU),Information Technology,UAE
+11,United Arab Emirates University (UAEU),Electronics and Communications Engineering,UAE
+12,United Arab Emirates University (UAEU),Mechanical Engineering,UAE
+13,United Arab Emirates University (UAEU),Electrical Engineering,UAE
+14,United Arab Emirates University (UAEU),Civil Engineering,UAE
+15,American University of Sharjah (AUS),Computer Science Engineering,UAE
+16,American University of Sharjah (AUS),Computer Engineering,UAE
+17,American University of Sharjah (AUS),Information Technology,UAE
+18,American University of Sharjah (AUS),Electronics and Communications Engineering,UAE
+19,American University of Sharjah (AUS),Mechanical Engineering,UAE
+20,American University of Sharjah (AUS),Electrical Engineering,UAE
+21,American University of Sharjah (AUS),Civil Engineering,UAE
+22,University of Sharjah,Computer Science Engineering,UAE
+23,University of Sharjah,Computer Engineering,UAE
+24,University of Sharjah,Information Technology,UAE
+25,University of Sharjah,Electronics and Communications Engineering,UAE
+26,University of Sharjah,Mechanical Engineering,UAE
+27,University of Sharjah,Electrical Engineering,UAE
+28,University of Sharjah,Civil Engineering,UAE
+29,Heriot-Watt University Dubai,Computer Science Engineering,UAE
+30,Heriot-Watt University Dubai,Computer Engineering,UAE
+31,Heriot-Watt University Dubai,Information Technology,UAE
+32,Heriot-Watt University Dubai,Electronics and Communications Engineering,UAE
+33,Heriot-Watt University Dubai,Mechanical Engineering,UAE
+34,Heriot-Watt University Dubai,Electrical Engineering,UAE
+35,Heriot-Watt University Dubai,Civil Engineering,UAE
+36,Rochester Institute of Technology (RIT) Dubai,Computer Science Engineering,UAE
+37,Rochester Institute of Technology (RIT) Dubai,Computer Engineering,UAE
+38,Rochester Institute of Technology (RIT) Dubai,Information Technology,UAE
+39,Rochester Institute of Technology (RIT) Dubai,Electronics and Communications Engineering,UAE
+40,Rochester Institute of Technology (RIT) Dubai,Mechanical Engineering,UAE
+41,Rochester Institute of Technology (RIT) Dubai,Electrical Engineering,UAE
+42,Rochester Institute of Technology (RIT) Dubai,Civil Engineering,UAE
+43,British University in Dubai (BUiD),Computer Science Engineering,UAE
+44,British University in Dubai (BUiD),Computer Engineering,UAE
+45,British University in Dubai (BUiD),Information Technology,UAE
+46,British University in Dubai (BUiD),Electronics and Communications Engineering,UAE
+47,British University in Dubai (BUiD),Mechanical Engineering,UAE
+48,British University in Dubai (BUiD),Electrical Engineering,UAE
+49,British University in Dubai (BUiD),Civil Engineering,UAE
+50,Ajman University,Computer Science Engineering,UAE
+51,Ajman University,Computer Engineering,UAE
+52,Ajman University,Information Technology,UAE
+53,Ajman University,Electronics and Communications Engineering,UAE
+54,Ajman University,Mechanical Engineering,UAE
+55,Ajman University,Electrical Engineering,UAE
+56,Ajman University,Civil Engineering,UAE
+57,Manipal Academy of Higher Education Dubai,Computer Science Engineering,UAE
+58,Manipal Academy of Higher Education Dubai,Computer Engineering,UAE
+59,Manipal Academy of Higher Education Dubai,Information Technology,UAE
+60,Manipal Academy of Higher Education Dubai,Electronics and Communications Engineering,UAE
+61,Manipal Academy of Higher Education Dubai,Mechanical Engineering,UAE
+62,Manipal Academy of Higher Education Dubai,Electrical Engineering,UAE
+63,Manipal Academy of Higher Education Dubai,Civil Engineering,UAE
+64,Amity University Dubai,Computer Science Engineering,UAE
+65,Amity University Dubai,Computer Engineering,UAE
+66,Amity University Dubai,Information Technology,UAE
+67,Amity University Dubai,Electronics and Communications Engineering,UAE
+68,Amity University Dubai,Mechanical Engineering,UAE
+69,Amity University Dubai,Electrical Engineering,UAE
+70,Amity University Dubai,Civil Engineering,UAE
+71,Abu Dhabi University,Computer Science Engineering,UAE
+72,Abu Dhabi University,Computer Engineering,UAE
+73,Abu Dhabi University,Information Technology,UAE
+74,Abu Dhabi University,Electronics and Communications Engineering,UAE
+75,Abu Dhabi University,Mechanical Engineering,UAE
+76,Abu Dhabi University,Electrical Engineering,UAE
+77,Abu Dhabi University,Civil Engineering,UAE
+78,Al Ghurair University,Computer Science Engineering,UAE
+79,Al Ghurair University,Computer Engineering,UAE
+80,Al Ghurair University,Information Technology,UAE
+81,Al Ghurair University,Electronics and Communications Engineering,UAE
+82,Al Ghurair University,Mechanical Engineering,UAE
+83,Al Ghurair University,Electrical Engineering,UAE
+84,Al Ghurair University,Civil Engineering,UAE
+85,Higher Colleges of Technology (HCT),Computer Science Engineering,UAE
+86,Higher Colleges of Technology (HCT),Computer Engineering,UAE
+87,Higher Colleges of Technology (HCT),Information Technology,UAE
+88,Higher Colleges of Technology (HCT),Electronics and Communications Engineering,UAE
+89,Higher Colleges of Technology (HCT),Mechanical Engineering,UAE
+90,Higher Colleges of Technology (HCT),Electrical Engineering,UAE
+91,Higher Colleges of Technology (HCT),Civil Engineering,UAE
+92,Zayed University,Computer Science Engineering,UAE
+93,Zayed University,Computer Engineering,UAE
+94,Zayed University,Information Technology,UAE
+95,Zayed University,Electronics and Communications Engineering,UAE
+96,Zayed University,Mechanical Engineering,UAE
+97,Zayed University,Electrical Engineering,UAE
+98,Zayed University,Civil Engineering,UAE
+99,University of Dubai,Computer Science Engineering,UAE
+100,University of Dubai,Computer Engineering,UAE
+101,University of Dubai,Information Technology,UAE
+102,University of Dubai,Electronics and Communications Engineering,UAE
+103,University of Dubai,Mechanical Engineering,UAE
+104,University of Dubai,Electrical Engineering,UAE
+105,University of Dubai,Civil Engineering,UAE
+106,Canadian University Dubai,Computer Science Engineering,UAE
+107,Canadian University Dubai,Computer Engineering,UAE
+108,Canadian University Dubai,Information Technology,UAE
+109,Canadian University Dubai,Electronics and Communications Engineering,UAE
+110,Canadian University Dubai,Mechanical Engineering,UAE
+111,Canadian University Dubai,Electrical Engineering,UAE
+112,Canadian University Dubai,Civil Engineering,UAE
+113,Al Ain University of Science and Technology,Computer Science Engineering,UAE
+114,Al Ain University of Science and Technology,Computer Engineering,UAE
+115,Al Ain University of Science and Technology,Information Technology,UAE
+116,Al Ain University of Science and Technology,Electronics and Communications Engineering,UAE
+117,Al Ain University of Science and Technology,Mechanical Engineering,UAE
+118,Al Ain University of Science and Technology,Electrical Engineering,UAE
+119,Al Ain University of Science and Technology,Civil Engineering,UAE
+120,Dubai Institute of Design and Innovation (DIDI),Computer Science Engineering,UAE
+121,Dubai Institute of Design and Innovation (DIDI),Computer Engineering,UAE
+122,Dubai Institute of Design and Innovation (DIDI),Information Technology,UAE
+123,Dubai Institute of Design and Innovation (DIDI),Electronics and Communications Engineering,UAE
+124,Dubai Institute of Design and Innovation (DIDI),Mechanical Engineering,UAE
+125,Dubai Institute of Design and Innovation (DIDI),Electrical Engineering,UAE
+126,Dubai Institute of Design and Innovation (DIDI),Civil Engineering,UAE
+127,Murdoch University Dubai,Computer Science Engineering,UAE
+128,Murdoch University Dubai,Computer Engineering,UAE
+129,Murdoch University Dubai,Information Technology,UAE
+130,Murdoch University Dubai,Electronics and Communications Engineering,UAE
+131,Murdoch University Dubai,Mechanical Engineering,UAE
+132,Murdoch University Dubai,Electrical Engineering,UAE
+133,Murdoch University Dubai,Civil Engineering,UAE
+134,University of Wollongong in Dubai (UOWD),Computer Science Engineering,UAE
+135,University of Wollongong in Dubai (UOWD),Computer Engineering,UAE
+136,University of Wollongong in Dubai (UOWD),Information Technology,UAE
+137,University of Wollongong in Dubai (UOWD),Electronics and Communications Engineering,UAE
+138,University of Wollongong in Dubai (UOWD),Mechanical Engineering,UAE
+139,University of Wollongong in Dubai (UOWD),Electrical Engineering,UAE
+140,University of Wollongong in Dubai (UOWD),Civil Engineering,UAE
+141,Bangladesh University of Engineering and Technology (BUET),Computer Science Engineering,Bangladesh
+142,Bangladesh University of Engineering and Technology (BUET),Computer Engineering,Bangladesh
+143,Bangladesh University of Engineering and Technology (BUET),Information Technology,Bangladesh
+144,Bangladesh University of Engineering and Technology (BUET),Electronics and Communications Engineering,Bangladesh
+145,Bangladesh University of Engineering and Technology (BUET),Mechanical Engineering,Bangladesh
+146,Bangladesh University of Engineering and Technology (BUET),Electrical Engineering,Bangladesh
+147,Bangladesh University of Engineering and Technology (BUET),Civil Engineering,Bangladesh
+148,Dhaka University of Engineering & Technology (DUET),Computer Science Engineering,Bangladesh
+149,Dhaka University of Engineering & Technology (DUET),Computer Engineering,Bangladesh
+150,Dhaka University of Engineering & Technology (DUET),Information Technology,Bangladesh
+151,Dhaka University of Engineering & Technology (DUET),Electronics and Communications Engineering,Bangladesh
+152,Dhaka University of Engineering & Technology (DUET),Mechanical Engineering,Bangladesh
+153,Dhaka University of Engineering & Technology (DUET),Electrical Engineering,Bangladesh
+154,Dhaka University of Engineering & Technology (DUET),Civil Engineering,Bangladesh
+155,Khulna University of Engineering & Technology (KUET),Computer Science Engineering,Bangladesh
+156,Khulna University of Engineering & Technology (KUET),Computer Engineering,Bangladesh
+157,Khulna University of Engineering & Technology (KUET),Information Technology,Bangladesh
+158,Khulna University of Engineering & Technology (KUET),Electronics and Communications Engineering,Bangladesh
+159,Khulna University of Engineering & Technology (KUET),Mechanical Engineering,Bangladesh
+160,Khulna University of Engineering & Technology (KUET),Electrical Engineering,Bangladesh
+161,Khulna University of Engineering & Technology (KUET),Civil Engineering,Bangladesh
+162,Chittagong University of Engineering & Technology (CUET),Computer Science Engineering,Bangladesh
+163,Chittagong University of Engineering & Technology (CUET),Computer Engineering,Bangladesh
+164,Chittagong University of Engineering & Technology (CUET),Information Technology,Bangladesh
+165,Chittagong University of Engineering & Technology (CUET),Electronics and Communications Engineering,Bangladesh
+166,Chittagong University of Engineering & Technology (CUET),Mechanical Engineering,Bangladesh
+167,Chittagong University of Engineering & Technology (CUET),Electrical Engineering,Bangladesh
+168,Chittagong University of Engineering & Technology (CUET),Civil Engineering,Bangladesh
+169,Rajshahi University of Engineering & Technology (RUET),Computer Science Engineering,Bangladesh
+170,Rajshahi University of Engineering & Technology (RUET),Computer Engineering,Bangladesh
+171,Rajshahi University of Engineering & Technology (RUET),Information Technology,Bangladesh
+172,Rajshahi University of Engineering & Technology (RUET),Electronics and Communications Engineering,Bangladesh
+173,Rajshahi University of Engineering & Technology (RUET),Mechanical Engineering,Bangladesh
+174,Rajshahi University of Engineering & Technology (RUET),Electrical Engineering,Bangladesh
+175,Rajshahi University of Engineering & Technology (RUET),Civil Engineering,Bangladesh
+176,Military Institute of Science and Technology (MIST),Computer Science Engineering,Bangladesh
+177,Military Institute of Science and Technology (MIST),Computer Engineering,Bangladesh
+178,Military Institute of Science and Technology (MIST),Information Technology,Bangladesh
+179,Military Institute of Science and Technology (MIST),Electronics and Communications Engineering,Bangladesh
+180,Military Institute of Science and Technology (MIST),Mechanical Engineering,Bangladesh
+181,Military Institute of Science and Technology (MIST),Electrical Engineering,Bangladesh
+182,Military Institute of Science and Technology (MIST),Civil Engineering,Bangladesh
+183,Ahsanullah University of Science and Technology (AUST),Computer Science Engineering,Bangladesh
+184,Ahsanullah University of Science and Technology (AUST),Computer Engineering,Bangladesh
+185,Ahsanullah University of Science and Technology (AUST),Information Technology,Bangladesh
+186,Ahsanullah University of Science and Technology (AUST),Electronics and Communications Engineering,Bangladesh
+187,Ahsanullah University of Science and Technology (AUST),Mechanical Engineering,Bangladesh
+188,Ahsanullah University of Science and Technology (AUST),Electrical Engineering,Bangladesh
+189,Ahsanullah University of Science and Technology (AUST),Civil Engineering,Bangladesh
+190,Islamic University of Technology (IUT),Computer Science Engineering,Bangladesh
+191,Islamic University of Technology (IUT),Computer Engineering,Bangladesh
+192,Islamic University of Technology (IUT),Information Technology,Bangladesh
+193,Islamic University of Technology (IUT),Electronics and Communications Engineering,Bangladesh
+194,Islamic University of Technology (IUT),Mechanical Engineering,Bangladesh
+195,Islamic University of Technology (IUT),Electrical Engineering,Bangladesh
+196,Islamic University of Technology (IUT),Civil Engineering,Bangladesh
+197,North South University (NSU),Computer Science Engineering,Bangladesh
+198,North South University (NSU),Computer Engineering,Bangladesh
+199,North South University (NSU),Information Technology,Bangladesh
+200,North South University (NSU),Electronics and Communications Engineering,Bangladesh
+201,North South University (NSU),Mechanical Engineering,Bangladesh
+202,North South University (NSU),Electrical Engineering,Bangladesh
+203,North South University (NSU),Civil Engineering,Bangladesh
+204,BRAC University,Computer Science Engineering,Bangladesh
+205,BRAC University,Computer Engineering,Bangladesh
+206,BRAC University,Information Technology,Bangladesh
+207,BRAC University,Electronics and Communications Engineering,Bangladesh
+208,BRAC University,Mechanical Engineering,Bangladesh
+209,BRAC University,Electrical Engineering,Bangladesh
+210,BRAC University,Civil Engineering,Bangladesh
+211,Bangladesh Army University of Science and Technology (BAUST),Computer Science Engineering,Bangladesh
+212,Bangladesh Army University of Science and Technology (BAUST),Computer Engineering,Bangladesh
+213,Bangladesh Army University of Science and Technology (BAUST),Information Technology,Bangladesh
+214,Bangladesh Army University of Science and Technology (BAUST),Electronics and Communications Engineering,Bangladesh
+215,Bangladesh Army University of Science and Technology (BAUST),Mechanical Engineering,Bangladesh
+216,Bangladesh Army University of Science and Technology (BAUST),Electrical Engineering,Bangladesh
+217,Bangladesh Army University of Science and Technology (BAUST),Civil Engineering,Bangladesh
+218,University of Asia Pacific (UAP),Computer Science Engineering,Bangladesh
+219,University of Asia Pacific (UAP),Computer Engineering,Bangladesh
+220,University of Asia Pacific (UAP),Information Technology,Bangladesh
+221,University of Asia Pacific (UAP),Electronics and Communications Engineering,Bangladesh
+222,University of Asia Pacific (UAP),Mechanical Engineering,Bangladesh
+223,University of Asia Pacific (UAP),Electrical Engineering,Bangladesh
+224,University of Asia Pacific (UAP),Civil Engineering,Bangladesh
+225,Daffodil International University (DIU),Computer Science Engineering,Bangladesh
+226,Daffodil International University (DIU),Computer Engineering,Bangladesh
+227,Daffodil International University (DIU),Information Technology,Bangladesh
+228,Daffodil International University (DIU),Electronics and Communications Engineering,Bangladesh
+229,Daffodil International University (DIU),Mechanical Engineering,Bangladesh
+230,Daffodil International University (DIU),Electrical Engineering,Bangladesh
+231,Daffodil International University (DIU),Civil Engineering,Bangladesh
+232,East West University (EWU),Computer Science Engineering,Bangladesh
+233,East West University (EWU),Computer Engineering,Bangladesh
+234,East West University (EWU),Information Technology,Bangladesh
+235,East West University (EWU),Electronics and Communications Engineering,Bangladesh
+236,East West University (EWU),Mechanical Engineering,Bangladesh
+237,East West University (EWU),Electrical Engineering,Bangladesh
+238,East West University (EWU),Civil Engineering,Bangladesh
+239,Stamford University Bangladesh,Computer Science Engineering,Bangladesh
+240,Stamford University Bangladesh,Computer Engineering,Bangladesh
+241,Stamford University Bangladesh,Information Technology,Bangladesh
+242,Stamford University Bangladesh,Electronics and Communications Engineering,Bangladesh
+243,Stamford University Bangladesh,Mechanical Engineering,Bangladesh
+244,Stamford University Bangladesh,Electrical Engineering,Bangladesh
+245,Stamford University Bangladesh,Civil Engineering,Bangladesh
+246,"Independent University, Bangladesh (IUB)",Computer Science Engineering,Bangladesh
+247,"Independent University, Bangladesh (IUB)",Computer Engineering,Bangladesh
+248,"Independent University, Bangladesh (IUB)",Information Technology,Bangladesh
+249,"Independent University, Bangladesh (IUB)",Electronics and Communications Engineering,Bangladesh
+250,"Independent University, Bangladesh (IUB)",Mechanical Engineering,Bangladesh
+251,"Independent University, Bangladesh (IUB)",Electrical Engineering,Bangladesh
+252,"Independent University, Bangladesh (IUB)",Civil Engineering,Bangladesh
+253,American International University-Bangladesh (AIUB),Computer Science Engineering,Bangladesh
+254,American International University-Bangladesh (AIUB),Computer Engineering,Bangladesh
+255,American International University-Bangladesh (AIUB),Information Technology,Bangladesh
+256,American International University-Bangladesh (AIUB),Electronics and Communications Engineering,Bangladesh
+257,American International University-Bangladesh (AIUB),Mechanical Engineering,Bangladesh
+258,American International University-Bangladesh (AIUB),Electrical Engineering,Bangladesh
+259,American International University-Bangladesh (AIUB),Civil Engineering,Bangladesh
+260,United International University (UIU),Computer Science Engineering,Bangladesh
+261,United International University (UIU),Computer Engineering,Bangladesh
+262,United International University (UIU),Information Technology,Bangladesh
+263,United International University (UIU),Electronics and Communications Engineering,Bangladesh
+264,United International University (UIU),Mechanical Engineering,Bangladesh
+265,United International University (UIU),Electrical Engineering,Bangladesh
+266,United International University (UIU),Civil Engineering,Bangladesh
+267,Sonargaon University,Computer Science Engineering,Bangladesh
+268,Sonargaon University,Computer Engineering,Bangladesh
+269,Sonargaon University,Information Technology,Bangladesh
+270,Sonargaon University,Electronics and Communications Engineering,Bangladesh
+271,Sonargaon University,Mechanical Engineering,Bangladesh
+272,Sonargaon University,Electrical Engineering,Bangladesh
+273,Sonargaon University,Civil Engineering,Bangladesh
+274,Bangladesh University,Computer Science Engineering,Bangladesh
+275,Bangladesh University,Computer Engineering,Bangladesh
+276,Bangladesh University,Information Technology,Bangladesh
+277,Bangladesh University,Electronics and Communications Engineering,Bangladesh
+278,Bangladesh University,Mechanical Engineering,Bangladesh
+279,Bangladesh University,Electrical Engineering,Bangladesh
+280,Bangladesh University,Civil Engineering,Bangladesh
+281,Chulalongkorn University,Computer Science Engineering,Thailand
+282,Chulalongkorn University,Computer Engineering,Thailand
+283,Chulalongkorn University,Information Technology,Thailand
+284,Chulalongkorn University,Electronics and Communications Engineering,Thailand
+285,Chulalongkorn University,Mechanical Engineering,Thailand
+286,Chulalongkorn University,Electrical Engineering,Thailand
+287,Chulalongkorn University,Civil Engineering,Thailand
+288,Mahidol University,Computer Science Engineering,Thailand
+289,Mahidol University,Computer Engineering,Thailand
+290,Mahidol University,Information Technology,Thailand
+291,Mahidol University,Electronics and Communications Engineering,Thailand
+292,Mahidol University,Mechanical Engineering,Thailand
+293,Mahidol University,Electrical Engineering,Thailand
+294,Mahidol University,Civil Engineering,Thailand
+295,King Mongkut's University of Technology Thonburi,Computer Science Engineering,Thailand
+296,King Mongkut's University of Technology Thonburi,Computer Engineering,Thailand
+297,King Mongkut's University of Technology Thonburi,Information Technology,Thailand
+298,King Mongkut's University of Technology Thonburi,Electronics and Communications Engineering,Thailand
+299,King Mongkut's University of Technology Thonburi,Mechanical Engineering,Thailand
+300,King Mongkut's University of Technology Thonburi,Electrical Engineering,Thailand
+301,King Mongkut's University of Technology Thonburi,Civil Engineering,Thailand
+302,Chiang Mai University,Computer Science Engineering,Thailand
+303,Chiang Mai University,Computer Engineering,Thailand
+304,Chiang Mai University,Information Technology,Thailand
+305,Chiang Mai University,Electronics and Communications Engineering,Thailand
+306,Chiang Mai University,Mechanical Engineering,Thailand
+307,Chiang Mai University,Electrical Engineering,Thailand
+308,Chiang Mai University,Civil Engineering,Thailand
+309,Kasetsart University,Computer Science Engineering,Thailand
+310,Kasetsart University,Computer Engineering,Thailand
+311,Kasetsart University,Information Technology,Thailand
+312,Kasetsart University,Electronics and Communications Engineering,Thailand
+313,Kasetsart University,Mechanical Engineering,Thailand
+314,Kasetsart University,Electrical Engineering,Thailand
+315,Kasetsart University,Civil Engineering,Thailand
+316,Thammasat University,Computer Science Engineering,Thailand
+317,Thammasat University,Computer Engineering,Thailand
+318,Thammasat University,Information Technology,Thailand
+319,Thammasat University,Electronics and Communications Engineering,Thailand
+320,Thammasat University,Mechanical Engineering,Thailand
+321,Thammasat University,Electrical Engineering,Thailand
+322,Thammasat University,Civil Engineering,Thailand
+323,Srinakharinwirot University,Computer Science Engineering,Thailand
+324,Srinakharinwirot University,Computer Engineering,Thailand
+325,Srinakharinwirot University,Information Technology,Thailand
+326,Srinakharinwirot University,Electronics and Communications Engineering,Thailand
+327,Srinakharinwirot University,Mechanical Engineering,Thailand
+328,Srinakharinwirot University,Electrical Engineering,Thailand
+329,Srinakharinwirot University,Civil Engineering,Thailand
+330,King Mongkut's University of Technology North Bangkok,Computer Science Engineering,Thailand
+331,King Mongkut's University of Technology North Bangkok,Computer Engineering,Thailand
+332,King Mongkut's University of Technology North Bangkok,Information Technology,Thailand
+333,King Mongkut's University of Technology North Bangkok,Electronics and Communications Engineering,Thailand
+334,King Mongkut's University of Technology North Bangkok,Mechanical Engineering,Thailand
+335,King Mongkut's University of Technology North Bangkok,Electrical Engineering,Thailand
+336,King Mongkut's University of Technology North Bangkok,Civil Engineering,Thailand
+337,Rajamangala University of Technology Thanyaburi,Computer Science Engineering,Thailand
+338,Rajamangala University of Technology Thanyaburi,Computer Engineering,Thailand
+339,Rajamangala University of Technology Thanyaburi,Information Technology,Thailand
+340,Rajamangala University of Technology Thanyaburi,Electronics and Communications Engineering,Thailand
+341,Rajamangala University of Technology Thanyaburi,Mechanical Engineering,Thailand
+342,Rajamangala University of Technology Thanyaburi,Electrical Engineering,Thailand
+343,Rajamangala University of Technology Thanyaburi,Civil Engineering,Thailand
+344,Assumption University,Computer Science Engineering,Thailand
+345,Assumption University,Computer Engineering,Thailand
+346,Assumption University,Information Technology,Thailand
+347,Assumption University,Electronics and Communications Engineering,Thailand
+348,Assumption University,Mechanical Engineering,Thailand
+349,Assumption University,Electrical Engineering,Thailand
+350,Assumption University,Civil Engineering,Thailand
+351,Bangkok University,Computer Science Engineering,Thailand
+352,Bangkok University,Computer Engineering,Thailand
+353,Bangkok University,Information Technology,Thailand
+354,Bangkok University,Electronics and Communications Engineering,Thailand
+355,Bangkok University,Mechanical Engineering,Thailand
+356,Bangkok University,Electrical Engineering,Thailand
+357,Bangkok University,Civil Engineering,Thailand
+358,Khon Kaen University,Computer Science Engineering,Thailand
+359,Khon Kaen University,Computer Engineering,Thailand
+360,Khon Kaen University,Information Technology,Thailand
+361,Khon Kaen University,Electronics and Communications Engineering,Thailand
+362,Khon Kaen University,Mechanical Engineering,Thailand
+363,Khon Kaen University,Electrical Engineering,Thailand
+364,Khon Kaen University,Civil Engineering,Thailand
+365,Mae Fah Luang University,Computer Science Engineering,Thailand
+366,Mae Fah Luang University,Computer Engineering,Thailand
+367,Mae Fah Luang University,Information Technology,Thailand
+368,Mae Fah Luang University,Electronics and Communications Engineering,Thailand
+369,Mae Fah Luang University,Mechanical Engineering,Thailand
+370,Mae Fah Luang University,Electrical Engineering,Thailand
+371,Mae Fah Luang University,Civil Engineering,Thailand
+372,Nakhon Ratchasima Rajabhat University,Computer Science Engineering,Thailand
+373,Nakhon Ratchasima Rajabhat University,Computer Engineering,Thailand
+374,Nakhon Ratchasima Rajabhat University,Information Technology,Thailand
+375,Nakhon Ratchasima Rajabhat University,Electronics and Communications Engineering,Thailand
+376,Nakhon Ratchasima Rajabhat University,Mechanical Engineering,Thailand
+377,Nakhon Ratchasima Rajabhat University,Electrical Engineering,Thailand
+378,Nakhon Ratchasima Rajabhat University,Civil Engineering,Thailand
+379,Ubon Ratchathani University,Computer Science Engineering,Thailand
+380,Ubon Ratchathani University,Computer Engineering,Thailand
+381,Ubon Ratchathani University,Information Technology,Thailand
+382,Ubon Ratchathani University,Electronics and Communications Engineering,Thailand
+383,Ubon Ratchathani University,Mechanical Engineering,Thailand
+384,Ubon Ratchathani University,Electrical Engineering,Thailand
+385,Ubon Ratchathani University,Civil Engineering,Thailand
+386,Suranaree University of Technology,Computer Science Engineering,Thailand
+387,Suranaree University of Technology,Computer Engineering,Thailand
+388,Suranaree University of Technology,Information Technology,Thailand
+389,Suranaree University of Technology,Electronics and Communications Engineering,Thailand
+390,Suranaree University of Technology,Mechanical Engineering,Thailand
+391,Suranaree University of Technology,Electrical Engineering,Thailand
+392,Suranaree University of Technology,Civil Engineering,Thailand
+393,Rajamangala University of Technology Tani,Computer Science Engineering,Thailand
+394,Rajamangala University of Technology Tani,Computer Engineering,Thailand
+395,Rajamangala University of Technology Tani,Information Technology,Thailand
+396,Rajamangala University of Technology Tani,Electronics and Communications Engineering,Thailand
+397,Rajamangala University of Technology Tani,Mechanical Engineering,Thailand
+398,Rajamangala University of Technology Tani,Electrical Engineering,Thailand
+399,Rajamangala University of Technology Tani,Civil Engineering,Thailand
+400,Rajamangala University of Technology Isan,Computer Science Engineering,Thailand
+401,Rajamangala University of Technology Isan,Computer Engineering,Thailand
+402,Rajamangala University of Technology Isan,Information Technology,Thailand
+403,Rajamangala University of Technology Isan,Electronics and Communications Engineering,Thailand
+404,Rajamangala University of Technology Isan,Mechanical Engineering,Thailand
+405,Rajamangala University of Technology Isan,Electrical Engineering,Thailand
+406,Rajamangala University of Technology Isan,Civil Engineering,Thailand
+407,Rajamangala University of Technology Phra Nakhon,Computer Science Engineering,Thailand
+408,Rajamangala University of Technology Phra Nakhon,Computer Engineering,Thailand
+409,Rajamangala University of Technology Phra Nakhon,Information Technology,Thailand
+410,Rajamangala University of Technology Phra Nakhon,Electronics and Communications Engineering,Thailand
+411,Rajamangala University of Technology Phra Nakhon,Mechanical Engineering,Thailand
+412,Rajamangala University of Technology Phra Nakhon,Electrical Engineering,Thailand
+413,Rajamangala University of Technology Phra Nakhon,Civil Engineering,Thailand
+414,National University of Singapore,Computer Science Engineering,Singapore
+415,National University of Singapore,Computer Engineering,Singapore
+416,National University of Singapore,Information Technology,Singapore
+417,National University of Singapore,Electronics and Communications Engineering,Singapore
+418,National University of Singapore,Mechanical Engineering,Singapore
+419,National University of Singapore,Electrical Engineering,Singapore
+420,National University of Singapore,Civil Engineering,Singapore
+421,Nanyang Technological University,Computer Science Engineering,Singapore
+422,Nanyang Technological University,Computer Engineering,Singapore
+423,Nanyang Technological University,Information Technology,Singapore
+424,Nanyang Technological University,Electronics and Communications Engineering,Singapore
+425,Nanyang Technological University,Mechanical Engineering,Singapore
+426,Nanyang Technological University,Electrical Engineering,Singapore
+427,Nanyang Technological University,Civil Engineering,Singapore
+428,Singapore Management University,Computer Science Engineering,Singapore
+429,Singapore Management University,Computer Engineering,Singapore
+430,Singapore Management University,Information Technology,Singapore
+431,Singapore Management University,Electronics and Communications Engineering,Singapore
+432,Singapore Management University,Mechanical Engineering,Singapore
+433,Singapore Management University,Electrical Engineering,Singapore
+434,Singapore Management University,Civil Engineering,Singapore
+435,Singapore University of Technology and Design,Computer Science Engineering,Singapore
+436,Singapore University of Technology and Design,Computer Engineering,Singapore
+437,Singapore University of Technology and Design,Information Technology,Singapore
+438,Singapore University of Technology and Design,Electronics and Communications Engineering,Singapore
+439,Singapore University of Technology and Design,Mechanical Engineering,Singapore
+440,Singapore University of Technology and Design,Electrical Engineering,Singapore
+441,Singapore University of Technology and Design,Civil Engineering,Singapore
+442,Singapore Institute of Technology,Computer Science Engineering,Singapore
+443,Singapore Institute of Technology,Computer Engineering,Singapore
+444,Singapore Institute of Technology,Information Technology,Singapore
+445,Singapore Institute of Technology,Electronics and Communications Engineering,Singapore
+446,Singapore Institute of Technology,Mechanical Engineering,Singapore
+447,Singapore Institute of Technology,Electrical Engineering,Singapore
+448,Singapore Institute of Technology,Civil Engineering,Singapore
+449,James Cook University Singapore,Computer Science Engineering,Singapore
+450,James Cook University Singapore,Computer Engineering,Singapore
+451,James Cook University Singapore,Information Technology,Singapore
+452,James Cook University Singapore,Electronics and Communications Engineering,Singapore
+453,James Cook University Singapore,Mechanical Engineering,Singapore
+454,James Cook University Singapore,Electrical Engineering,Singapore
+455,James Cook University Singapore,Civil Engineering,Singapore
+456,Monash University Singapore,Computer Science Engineering,Singapore
+457,Monash University Singapore,Computer Engineering,Singapore
+458,Monash University Singapore,Information Technology,Singapore
+459,Monash University Singapore,Electronics and Communications Engineering,Singapore
+460,Monash University Singapore,Mechanical Engineering,Singapore
+461,Monash University Singapore,Electrical Engineering,Singapore
+462,Monash University Singapore,Civil Engineering,Singapore
+463,University of Southampton Malaysia Campus,Computer Science Engineering,Singapore
+464,University of Southampton Malaysia Campus,Computer Engineering,Singapore
+465,University of Southampton Malaysia Campus,Information Technology,Singapore
+466,University of Southampton Malaysia Campus,Electronics and Communications Engineering,Singapore
+467,University of Southampton Malaysia Campus,Mechanical Engineering,Singapore
+468,University of Southampton Malaysia Campus,Electrical Engineering,Singapore
+469,University of Southampton Malaysia Campus,Civil Engineering,Singapore
+470,Curtin University Singapore,Computer Science Engineering,Singapore
+471,Curtin University Singapore,Computer Engineering,Singapore
+472,Curtin University Singapore,Information Technology,Singapore
+473,Curtin University Singapore,Electronics and Communications Engineering,Singapore
+474,Curtin University Singapore,Mechanical Engineering,Singapore
+475,Curtin University Singapore,Electrical Engineering,Singapore
+476,Curtin University Singapore,Civil Engineering,Singapore
+477,RMIT University Singapore,Computer Science Engineering,Singapore
+478,RMIT University Singapore,Computer Engineering,Singapore
+479,RMIT University Singapore,Information Technology,Singapore
+480,RMIT University Singapore,Electronics and Communications Engineering,Singapore
+481,RMIT University Singapore,Mechanical Engineering,Singapore
+482,RMIT University Singapore,Electrical Engineering,Singapore
+483,RMIT University Singapore,Civil Engineering,Singapore
+484,Singapore Polytechnic,Computer Science Engineering,Singapore
+485,Singapore Polytechnic,Computer Engineering,Singapore
+486,Singapore Polytechnic,Information Technology,Singapore
+487,Singapore Polytechnic,Electronics and Communications Engineering,Singapore
+488,Singapore Polytechnic,Mechanical Engineering,Singapore
+489,Singapore Polytechnic,Electrical Engineering,Singapore
+490,Singapore Polytechnic,Civil Engineering,Singapore
+491,Ngee Ann Polytechnic,Computer Science Engineering,Singapore
+492,Ngee Ann Polytechnic,Computer Engineering,Singapore
+493,Ngee Ann Polytechnic,Information Technology,Singapore
+494,Ngee Ann Polytechnic,Electronics and Communications Engineering,Singapore
+495,Ngee Ann Polytechnic,Mechanical Engineering,Singapore
+496,Ngee Ann Polytechnic,Electrical Engineering,Singapore
+497,Ngee Ann Polytechnic,Civil Engineering,Singapore
+498,Temasek Polytechnic,Computer Science Engineering,Singapore
+499,Temasek Polytechnic,Computer Engineering,Singapore
+500,Temasek Polytechnic,Information Technology,Singapore
+501,Temasek Polytechnic,Electronics and Communications Engineering,Singapore
+502,Temasek Polytechnic,Mechanical Engineering,Singapore
+503,Temasek Polytechnic,Electrical Engineering,Singapore
+504,Temasek Polytechnic,Civil Engineering,Singapore
+505,Republic Polytechnic,Computer Science Engineering,Singapore
+506,Republic Polytechnic,Computer Engineering,Singapore
+507,Republic Polytechnic,Information Technology,Singapore
+508,Republic Polytechnic,Electronics and Communications Engineering,Singapore
+509,Republic Polytechnic,Mechanical Engineering,Singapore
+510,Republic Polytechnic,Electrical Engineering,Singapore
+511,Republic Polytechnic,Civil Engineering,Singapore
+512,Singapore Institute of Management,Computer Science Engineering,Singapore
+513,Singapore Institute of Management,Computer Engineering,Singapore
+514,Singapore Institute of Management,Information Technology,Singapore
+515,Singapore Institute of Management,Electronics and Communications Engineering,Singapore
+516,Singapore Institute of Management,Mechanical Engineering,Singapore
+517,Singapore Institute of Management,Electrical Engineering,Singapore
+518,Singapore Institute of Management,Civil Engineering,Singapore
+519,Kaplan Singapore,Computer Science Engineering,Singapore
+520,Kaplan Singapore,Computer Engineering,Singapore
+521,Kaplan Singapore,Information Technology,Singapore
+522,Kaplan Singapore,Electronics and Communications Engineering,Singapore
+523,Kaplan Singapore,Mechanical Engineering,Singapore
+524,Kaplan Singapore,Electrical Engineering,Singapore
+525,Kaplan Singapore,Civil Engineering,Singapore
+526,MDIS Singapore,Computer Science Engineering,Singapore
+527,MDIS Singapore,Computer Engineering,Singapore
+528,MDIS Singapore,Information Technology,Singapore
+529,MDIS Singapore,Electronics and Communications Engineering,Singapore
+530,MDIS Singapore,Mechanical Engineering,Singapore
+531,MDIS Singapore,Electrical Engineering,Singapore
+532,MDIS Singapore,Civil Engineering,Singapore
+533,PSB Academy,Computer Science Engineering,Singapore
+534,PSB Academy,Computer Engineering,Singapore
+535,PSB Academy,Information Technology,Singapore
+536,PSB Academy,Electronics and Communications Engineering,Singapore
+537,PSB Academy,Mechanical Engineering,Singapore
+538,PSB Academy,Electrical Engineering,Singapore
+539,PSB Academy,Civil Engineering,Singapore
+540,Raffles College,Computer Science Engineering,Singapore
+541,Raffles College,Computer Engineering,Singapore
+542,Raffles College,Information Technology,Singapore
+543,Raffles College,Electronics and Communications Engineering,Singapore
+544,Raffles College,Mechanical Engineering,Singapore
+545,Raffles College,Electrical Engineering,Singapore
+546,Raffles College,Civil Engineering,Singapore
+547,Wilfrid Laurier University,Computer Science Engineering,Singapore
+548,Wilfrid Laurier University,Computer Engineering,Singapore
+549,Wilfrid Laurier University,Information Technology,Singapore
+550,Wilfrid Laurier University,Electronics and Communications Engineering,Singapore
+551,Wilfrid Laurier University,Mechanical Engineering,Singapore
+552,Wilfrid Laurier University,Electrical Engineering,Singapore
+553,Wilfrid Laurier University,Civil Engineering,Singapore
